@@ -268,10 +268,3 @@ python main.py build-dataset
 python main.py run-all --skip-diffusion # add the diffusion stage separately if time allows
 pytest tests/ -v
 ```
-
-## References
-
-* Original graded submission: <https://github.com/raulrodriguezlr/B5-T1>
-* Original notebooks (unmodified): `notebooks/original_submission/`
-* Professor's reference material: `professor_notebooks/`
-* Assignment brief, class summary, correction-lecture transcript: `materials/`
