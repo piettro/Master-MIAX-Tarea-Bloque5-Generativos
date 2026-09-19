@@ -1,0 +1,14 @@
+# Pinned to the versions this project was validated against. Python 3.14
+# has no TensorFlow wheel, so Keras 3 runs on the PyTorch backend
+# (KERAS_BACKEND=torch, set automatically by main.py and every module that
+# needs it).
+numpy==2.5.2
+pandas==3.0.5
+scipy==1.18.1
+scikit-learn==1.9.0
+matplotlib==3.11.1
+seaborn==0.13.2
+yfinance==1.7.0
+torch==2.13.0
+keras==3.15.1
+pytest==9.1.1

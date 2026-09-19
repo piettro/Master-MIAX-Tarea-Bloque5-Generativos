@@ -1,0 +1,51 @@
+# --- Python -------------------------------------------------------------
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# --- Virtual environments -------------------------------------------------
+.venv/
+venv/
+env/
+
+# --- Environment / secrets -------------------------------------------------
+.env
+.env.*
+
+# --- IDEs -------------------------------------------------------------------
+.idea/
+.vscode/
+
+# --- OS ---------------------------------------------------------------------
+.DS_Store
+Thumbs.db
+
+# --- Project data and artifacts ---------------------------------------------
+# The full raw price download is heavy and reproducible from
+# `python main.py download-prices`; only the small, filtered universe cache
+# is version-controlled.
+data/raw/
+data/processed/*.npz
+!data/processed/prices_universe.csv
+
+# Synthetic datasets and the KL/x0/discriminator loss curves saved alongside
+# them are large (tens of MB each) and fully reproducible by re-running the
+# relevant `main.py train-generator <name>` command.
+models/*.npz
+models/*.keras
+
+# Generated figures and tables are reproducible from the commands in
+# README.md; they are not checked in so the diff stays about code.
+results/figures/*.png
+results/tables/*.csv
+!results/.gitkeep
+
+portfolio/*
+materials/*
+professor_notebooks/*
